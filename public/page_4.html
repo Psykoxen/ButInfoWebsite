@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>BUT - Contact</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="assets/icon/favicon.ico">
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="style/style.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>BUT•</h1>
+      <p>
+        Informatique
+      </p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="page_2.html">Formation</a></li>
+          <li><a href="page_3.html">Orientation</a></li>
+          <li><a class="active" href="page_4.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form method="get"action="http://champin.net/enseignement/intro-web/_static/formproc/debug">
+      <fieldset>
+        <legend>
+          <label>Vos coordonnées</label>
+        </legend>
+        <label for="last_name">Nom :</label>
+        <br />
+        <input type="text"name="last_name"id="last_name"placeholder="Dupont"/>
+        <br />
+        <label for="name">Prenom :</label>
+        <br />
+        <input type="text" name="name" id="name" placeholder="Jean" />
+        <br />
+        <label for="mail">Mail :</label>
+        <br />
+        <input type="email" name="mail" id="mail" placeholder="xyz@abcd.com" />
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>
+          <label for="request">Votre message</label>
+        </legend>
+        <br />
+        <textarea name="request"id="request"placeholder="Votre message"></textarea>
+        <br />
+        <input type="submit" value="Envoyer" />
+      </fieldset>
+      <fieldset>
+        <legend>
+          <label>Contact</label>
+        </legend>
+        <h2>Email</h2>
+        <a href="mailto:iutdoua.info@univ-lyon1.fr">iutdoua.info@univ-lyon1.fr</a>
+        <h2>Telephone</h2>
+        <p>
+          04 72 69 21 82
+        </p>
+        <h2>Adresse</h2>
+        <p>
+          IUT Lyon 1, Site de Villeurbanne Doua - Département Informatique
+          <br />
+          92 boulevard Niels Bohr, Villeurbanne
+          <br />
+        </p>
+      </fieldset>
+    </form>
+    <footer>
+      <section>
+        <ul class="social">
+          <li>
+            <a href="https://www.instagram.com/iutlyon1/"><img src="assets/footer/instagram.png"alt="Instagram"/></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/IUTLyon1"><img src="assets/footer/facebook.png"alt="Facebook"/></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/IUTLyon1"><img src="assets/footer/twitter.png"alt="Twitter"/></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/IUTLYON1"><img src="assets/footer/youtube.png"alt="Youtube"/></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/school/iut-lyon-1/"><img src="assets/footer/linkedin.png"alt="Linkedin"/></a>
+          </li>
+          <li>
+            <a href="mailto:iutdoua.info@univ-lyon1.fr"><img src="assets/footer/email.png"alt="Mail"/></a>
+          </li>
+        </ul>
+      </section>
+      <p>
+        © 2021 Nguyen | Voillot
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,781 @@
+
+*
+{
+  font-family: "Gill Sans", sans-serif;
+}
+
+p
+{
+font-size:120%}
+
+@media (prefers-color-scheme: dark)
+{
+  body
+  {
+    background-color: #121212;
+    color: white;
+  }
+
+  footer
+  {
+    background-color: #2C2C2C;
+  }
+
+  nav ul li:hover
+  {
+    background-color: #345EF2;
+    border-color: #345EF2;
+    color: white;
+  }
+
+  nav ul li
+  {
+    padding: 1% 0;
+    background-color: #2C2C2C;
+    color: white;
+  }
+
+  nav ul li a
+  {
+    color: white;
+  }
+
+  .media-index section
+  {
+    background-color: black;
+  }
+
+  .active
+  {
+    background-color: #345EF2;
+    color: white;
+  border: 1px solid #345EF2  }
+
+  input,  textarea
+  {
+    background-color: #2C2C2C;
+    color: white;
+  }
+
+  input[type="submit"]
+  {
+    background-color: #345EF2;
+    color: white;
+    transition-duration: 1s;
+    border-color: #121212;
+  }
+
+  input[type="submit"]:hover
+  {
+    border-color: #2C2C2C;
+    background-color: white;
+    color: #345EF2;
+    transition-duration: 1s;
+  }
+
+  form legend
+  {
+    border: 2px solid #121212;
+  }
+
+  .arrow_top
+  {
+    background-color: #2C2C2C;
+  }
+}
+
+@media (prefers-color-scheme: light)
+{
+  body
+  {
+    background-color: white;
+    color: black;
+  }
+
+  footer
+  {
+    background-color: #345EF2;
+  }
+
+  .arrow_top
+  {
+    background-color: #345EF2;
+  }
+
+  p
+  {
+    color: white;
+  }
+
+  nav ul li:hover
+  {
+    background-color: white;
+    color: #345EF2;
+  }
+
+  nav ul li
+  {
+    padding: 1% 0;
+    background-color: #345EF2;
+    color: white;
+    border: 1px solid #426Bff;
+  }
+
+  nav ul li a
+  {
+    color: white;
+  }
+
+  nav ul li a:hover
+  {
+    color: #345EF2;
+  }
+
+  .active
+  {
+    background-color: white;
+    color: #345EF2;
+  }
+
+  header p
+  {
+    color: black;
+  }
+
+  .navbar a:hover
+  {
+    background-color: white;
+    color: #345EF2;
+  }
+
+  .navbar a
+  {
+    padding: 1% 0;
+    background-color: #345EF2;
+    color: white;
+    border: 1px solid #345EF2;
+  }
+
+  .navbar .active
+  {
+    background-color: white;
+    color: #345EF2;
+  }
+
+  .media-index section
+  {
+    background-color: #345EF2;
+  }
+
+  section
+  {
+    color: white;
+  }
+
+  input,  textarea
+  {
+    background-color: white;
+    color: black;
+  }
+
+  input[type="submit"]
+  {
+    background-color: white;
+    color: #345EF2;
+    transition-duration: 1s;
+    border-color: transparent;
+  }
+
+  input[type="submit"]:hover
+  {
+    background-color: #345EF2;
+    color: white;
+    transition-duration: 1s;
+    border-color: white;
+  }
+
+  form legend
+  {
+    border: 2px solid white;
+  }
+}
+
+@media screen and (min-width: 1025px)
+{
+  form
+  {
+    width: 40%;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
+  .navbar-anchor
+  {
+    padding:5%;
+    display: flex;
+  }
+
+  .container-jobs
+  {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr [col-start]);
+    grid-template-rows: 2fr;
+  }
+
+  .container-jobs section h1
+  {
+    padding: 2%;
+  }
+
+  .box section:nth-child(2n)
+  {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .box section:nth-child(2n+1)
+  {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .arrow_adapt
+  {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px)
+{
+  nav ul
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  p
+  {
+  font-size:140%}
+
+  .navbar-anchor
+  {
+    padding: 5% 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer
+  {
+    align-items: center;
+  }
+
+  form
+  {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+
+  .container-jobs
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .box .element
+  {
+    min-width: 425px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.decript-index
+{
+  margin: 2%;
+  padding: 2%;
+  background-color: #345EF2;
+  text-align: justify;
+}
+
+.decript-index a
+{
+  font-weight:bold;
+  color: white;
+}
+
+.media-index
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50em;
+  overflow: hidden;
+  position: relative;
+  padding: 0 2%;
+}
+
+.media-index img
+{
+  overflow: hidden;
+  height: 50em;
+  width: 100%;
+  object-fit: cover;
+}
+
+.media-index section
+{
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 2%;
+  padding-left: 5%;
+  padding-right: 3%;
+  padding-bottom: 2%;
+  padding-top: 1%;
+  width: 88%;
+  text-align: justify;
+  margin: 0;
+  opacity: 0.8;
+  overflow: hidden;
+  font-size: 1.5em;
+}
+
+.media-index h2, .decript-index h2
+{
+  font-size: 1.85em;
+}
+
+.media-index p
+{
+  font-weight: normal;
+}
+
+body
+{
+  margin: 0;
+}
+
+header
+{
+  margin: 2% 0;
+}
+
+header h1
+{
+  color: #345EF2;
+  font-size: 55px;
+  text-align: center;
+  margin: 0;
+}
+
+header p
+{
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+nav ul
+{
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  margin-top: 2%;
+  padding: 0;
+  justify-content: center;
+}
+
+nav ul li
+{
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+  padding: 0;
+  position: relative;
+}
+
+nav ul li a
+{
+  display: block;
+  line-height: 3;
+  font-weight: bold;
+  text-decoration: None;
+  text-align: center;
+  transition-duration: 1s;
+}
+
+nav ul li, nav ul li:hover
+{
+  transition-duration: 1s;
+}
+
+.navbar-anchor a
+{
+  padding: 10% 0;
+}
+
+.navbar-anchor
+{
+  height: 100%;
+}
+
+.navbar-anchor a:hover
+{
+  background-color: #0E3FEA;
+  color: white;
+  font-size: 110%;
+  transition-duration: 1s;
+}
+
+.navbar-anchor a
+{
+  flex-grow: 2;
+  flex-basis: 0;
+  font-weight: bold;
+  text-decoration: None;
+  text-align: center;
+  transition-duration: 1s;
+  color: white;
+}
+
+table
+{
+  width: 425px;
+  border-spacing: 0;
+  margin: 0 2%;
+}
+
+th,td
+{
+  border: 1px solid white;
+  text-align: center;
+  font-size: 0.75em;
+}
+
+table tr td:first-child
+{
+  font-weight: bold;
+}
+
+caption
+{
+  font-weight: bold;
+  font-size: 1.25em;
+  margin: 2%;
+}
+
+#BUT,.section1_nav,#BUT_media,.container-jobs-box1
+{
+  background-color: #345EF2;
+}
+
+#PRG,.section2_nav,#PRG_media,.container-jobs-box2
+{
+  background-color: #264fe0;
+}
+
+#IUT,.section3_nav,#IUT_media,.container-jobs-box3
+{
+  background-color: #183fcc;
+}
+
+#ETC,.section4_nav,#ETC_media,.container-jobs-box4
+{
+  background-color: #0c2da6;
+}
+
+footer
+{
+  padding: 1% 0 0.5% 0;
+  margin-top: 1%;
+  width:100%;
+}
+
+footer section
+{
+  display: flex;
+}
+
+footer section ul
+{
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+footer section .foot_contact
+{
+  margin-top: 1%;
+  padding-right: 2%;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer p
+{
+  text-align: center;
+}
+
+footer .social
+{
+  list-style-type: none;
+  margin-top: 1%;
+}
+
+footer .social li
+{
+  display: inline;
+  margin-left: 1.5%;
+}
+
+footer .social li a img
+{
+  width: 1.5em;
+  aspect-ratio: 1/1;
+}
+
+footer .navfooter
+{
+  display: flex;
+}
+
+footer .navfooter section
+{
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+}
+
+footer .navfooter section ul
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .navfooter section a
+{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+footer .navfooter section li a
+{
+  text-decoration: none;
+  font-weight: normal;
+  color: white;
+}
+
+.formulaire
+{
+  display: flex;
+  flex-direction: column;
+}
+
+form fieldset,form label
+{
+  background-color: #345EF2;
+  border: 0;
+  font-size: 1.25em;
+}
+
+form fieldset
+{
+  margin: 2% auto;
+  color: white;
+}
+
+form legend
+{
+  background-color: #345EF2;
+  color: white;
+}
+
+form legend,input[type="submit"]
+{
+  font-weight: bold;
+  padding: 0.5%;
+}
+
+input[type="submit"]
+{
+  margin: 1% 0;
+  border: 2px solid;
+  font-size: 1.2em;
+}
+
+input,textarea
+{
+  border: 0;
+}
+
+textarea
+{
+  resize: none;
+  width: 100%;
+  height: 20em;
+}
+
+form fieldset h2
+{
+  font-size: 1em;
+  border: 1px solid #345EF2;
+}
+
+form fieldset h2,form fieldset p,form fieldset a
+{
+  background-color: transparent;
+}
+
+form fieldset p,form fieldset a
+{
+  margin-left: 4%;
+  font-style: italic;
+}
+
+.arrow_top
+{
+  display: block;
+  position: fixed;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 2%;
+  bottom: 6%;
+  right: 0;
+  margin: 0 2% 2% 0;
+  border-radius: 20%;
+}
+
+.container-jobs section h2
+{
+  text-align: center;
+  font-size: 1.75em;
+}
+
+.container-jobs section h3
+{
+  font-size: 1em;
+  text-decoration: underline;
+  margin: 0px;
+  padding-left: 10%;
+}
+
+.container-jobs section ul
+{
+  margin-top: 1%;
+  font-style: italic;
+  align-content: center;
+  padding-left: 15%;
+}
+
+.container-jobs section p,.container-jobs section li
+{
+  font-size: 1em;
+}
+
+.container-jobs section p
+{
+  padding: 2%;
+  margin-bottom: 0px;
+  display: block;
+  text-align: justify;
+}
+
+.container-jobs-box3 img,.container-jobs-box1 img
+{
+  float: right;
+  padding-left: 2%;
+}
+
+.container-jobs-box2 img,.container-jobs-box4 img
+{
+  float: left;
+  padding-right: 2%;
+}
+
+.container-jobs section h1,.container-jobs section p,.container-jobs section img
+{
+  background-color: transparent;
+}
+
+.container-jobs img
+{
+  width: 100%;
+  height: 100%;
+object-fit: cover}
+
+.box
+{
+  display: grid;
+  grid-auto-rows: 1fr;
+}
+
+.box .element
+{
+  display: grid;
+  margin-bottom: 4em;
+}
+
+.box .element section
+{
+  display: block;
+  height: 100%;
+  background-color: transparent;
+  padding: 2%;
+}
+
+.box .element section table
+{
+  margin: 0 auto;
+  text-align : center;
+  display: block;
+  font-size: 120%;
+}
+
+.box .element img
+{
+  width: 100%;
+  height: 100%;
+object-fit: cover}
+
+.box .element section ul
+{
+  font-size:110%;
+}
+
+.box .element section a,fieldset a
+{
+  color: white;
+  text-decoration: None;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.box .element section h2
+{
+  font-size: 1.75em;
+}
+
+.box .element section h3
+{
+  font-size: 1.25em;
+}
+
+.box .element section>p
+{
+  text-align: justify;
+}
+
+.style_italic
+{
+  font-style: italic;
+}
